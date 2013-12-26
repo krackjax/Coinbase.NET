@@ -53,20 +53,17 @@ namespace Coinbase.Net.Api
 
         private string GetAccountBalanceUrl()
         {
-            var url = BaseUrl + "account/balance";
-            return url;
+            return BaseUrl + "account/balance";
         }
 
         private string GetReceiveAddressUrl()
         {
-            var url = BaseUrl + "account/receive_address";
-            return url;
+            return BaseUrl + "account/receive_address";
         }
 
         private string GetNewReceiveAddressUrl()
         {
-            var url = BaseUrl + "account/generate_receive_address";
-            return url;
+            return BaseUrl + "account/generate_receive_address";
         }
 
     }
