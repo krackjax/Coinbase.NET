@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Api\Account.cs" />
     <Compile Include="Api\Buys.cs" />
+    <Compile Include="Api\Currencies.cs" />
     <Compile Include="Api\Sells.cs" />
     <Compile Include="Authentication\AuthenticatorBase.cs" />
     <Compile Include="Types\AccountAddress.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Extensions\String.cs" />
     <Compile Include="Types\AccountNewReceiveAddress.cs" />
     <Compile Include="Types\AccountReceiveAddress.cs" />
+    <Compile Include="Types\Currency.cs" />
     <Compile Include="Types\ExchangeBitcoinResponse.cs" />
     <Compile Include="Types\CoinbaseFee.cs" />
     <Compile Include="Types\PriceSellResponse.cs" />

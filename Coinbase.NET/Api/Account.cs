@@ -65,6 +65,5 @@ namespace Coinbase.Net.Api
         {
             return BaseUrl + "account/generate_receive_address";
         }
-
     }
 }

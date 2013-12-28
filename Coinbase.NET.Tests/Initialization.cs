@@ -15,6 +15,7 @@ namespace Coinbase.Net.Tests
             {
                 new CoinbaseClient(null, new ApiKeyAuthenticator());
             }
+                
 
             catch (ArgumentException)
             {
