@@ -115,6 +115,14 @@ namespace Coinbase.Net.Api
             }
         }
 
+        private async static Task<string> GetUnauthenticatedJResourceAsString(string url)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                return await httpClient.GetStringAsync(url);
+            }
+        }
+
         #region Disposal / Cleanup
         private void AssertNotDisposed()
         {

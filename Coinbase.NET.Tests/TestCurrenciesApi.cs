@@ -16,11 +16,19 @@ namespace Coinbase.Net.Tests
         [TestMethod]
         public void TestGetCurrencies()
         {
-            List<Currency>currencies = CoinbaseClient.GetCurrencies().Result;
+            string[,] currencies = CoinbaseClient.GetCurrencies().Result;
 
             Assert.IsNotNull(currencies);
-            Assert.IsTrue(currencies.Count > 0);
-            Assert.AreEqual("AFN", currencies[0].Code);
+            Assert.AreEqual("AFN", currencies[0,1]);
+        }
+
+        [TestMethod]
+        public void TestGetExchangeRates()
+        {
+            Dictionary<string, double> exchangeRates = CoinbaseClient.GetExchangeRates().Result;
+
+            Assert.IsNotNull(exchangeRates);
+            Assert.IsTrue(exchangeRates["btc_to_usd"] > 0);
         }
     }
 }
